@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7F00BCD4"
+    android:background="#E77CE8F6"
     android:padding="16dp">
 
     <LinearLayout
@@ -20,9 +20,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:layout_marginBottom="12dp"
-            android:fontFamily="@font/cherry_bomb_one"
+            android:fontFamily="@font/baloo_paaji"
             android:text="Bubble Sort"
-            android:textSize="45sp" />
+            android:textColor="#2D46D3"
+            android:textColorLink="#007a7a"
+            android:textSize="45sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/inputTextBox"
@@ -30,7 +33,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="Enter integers (comma or space separated)"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColorHint="#2D46D3"
+            android:textColorLink="#de6600" />
 
         <TextView
             android:id="@+id/errorTextBox"
@@ -52,28 +57,35 @@
                 android:id="@+id/sortButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
-                android:fontFamily="@font/cherry_bomb_one"
-                android:text="Sort" />
+                android:layout_marginEnd="0dp"
+                android:insetRight="20dp"
+                android:backgroundTint="#2D46D3"
+                android:fontFamily="@font/baloo_paaji"
+                android:text="Sort"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/resetButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/cherry_bomb_one"
+                android:backgroundTint="#2D46D3"
+                android:fontFamily="@font/baloo_paaji"
                 android:insetLeft="10dp"
                 android:insetRight="10dp"
-                android:text="Reset" />
+                android:text="Reset"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/quitButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/cherry_bomb_one"
-                android:insetLeft="10dp"
-                android:insetRight="10dp"
-                android:text="Quit" />
+                android:backgroundTint="#2D46D3"
+                android:fontFamily="@font/baloo_paaji"
+                android:insetLeft="20dp"
+                android:insetRight="0dp"
+                android:text="Quit"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
 
         <TextView
@@ -101,10 +113,12 @@
 
         <TextView
             android:id="@+id/exitMessageBox"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
             android:textAlignment="textStart"
-            android:textSize="18sp" />
+            android:fontFamily="@font/baloo_paaji"
+            android:textColor="#2D46D3"
+            android:textSize="20sp" />
     </LinearLayout>
 </ScrollView>
